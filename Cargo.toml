@@ -1,0 +1,27 @@
+[package]
+name = "voltaic"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+axum = { version = "0.5.6", features = ["headers"] }
+axum-macros = "0.2.2"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.5", features = [ "runtime-tokio-rustls", "sqlite", "chrono" ] }
+dotenv = "0.15.0"
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.78"
+bcrypt = "0.13.0"
+tower = "0.4.12"
+tower-http = { version = "0.3.3", features = ["cors"] }
+thiserror = "1.0.31"
+anyhow = "1.0.57"
+rand = "0.8.5"
+hex = "0.4.3"
+chrono = { version = "0.4.19", features = ["serde"] }
+serde_with = "1.14.0"
